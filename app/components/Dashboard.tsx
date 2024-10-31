@@ -1,30 +1,9 @@
-"use client";
-import React, { useState, useEffect } from "react";
-import { db } from "../config/firebase";
-import { getDocs, collection } from "firebase/firestore";
+import { getUsers } from "../config/firebase";
 
-const Dashboard = () => {
-  const [data, setData] = useState([]);
+const Dashboard = async () => {
+  const name = await getUsers();
 
-  const usersCollectionRef = collection(db, "users");
-
-  useEffect(() => {
-    const getUserList = async () => {
-      try {
-        const data = await getDocs(usersCollectionRef);
-        const filteredData = data.docs.map((doc) => ({
-          ...doc.data(),
-          id: doc.id,
-        }));
-        console.log(filteredData);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-    getUserList();
-  }, []);
-
-  return <div>Dashboard</div>;
+  return <div className="">{name[0].name}</div>;
 };
 
 export default Dashboard;

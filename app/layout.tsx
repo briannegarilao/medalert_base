@@ -12,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-screen" data-theme="synthwave">
+    <html lang="en" className="h-screen" data-theme="wireframe">
       <body className="flex min-h-screen items-center justify-center">
         {children}
       </body>

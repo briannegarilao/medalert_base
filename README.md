@@ -46,17 +46,6 @@ npm install
 
 Create a `.env.local` file in the `frontend` directory and add your Firebase configuration:
 
-```plaintext
-NEXT_PUBLIC_FIREBASE_API_KEY=AIzaSyDC1A_-BRz3fZQcXt2mXwqZ3Z38QS5OUeU
-NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=medalert-1db99.firebaseapp.com
-NEXT_PUBLIC_FIREBASE_DATABASE_URL=https://medalert-1db99-default-rtdb.asia-southeast1.firebasedatabase.app
-NEXT_PUBLIC_FIREBASE_PROJECT_ID=medalert-1db99
-NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=medalert-1db99.appspot.com
-NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=506075095020
-NEXT_PUBLIC_FIREBASE_APP_ID=1:506075095020:web:92a170b141afac17c8aac9
-NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=G-Y04YS34ESN
-```
-
 ### 4. Run the Application
 
 In the `frontend` directory, start the development server:

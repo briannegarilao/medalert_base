@@ -6,19 +6,22 @@ import { getDocs, collection } from "firebase/firestore";
 const Dashboard = () => {
   const [data, setData] = useState([]);
 
-  const usersCollectionRef = collection(db, "Users");
+  const usersCollectionRef = collection(db, "users");
 
   useEffect(() => {
-    const fetchData = async () => {
+    const getUserList = async () => {
       try {
         const data = await getDocs(usersCollectionRef);
-        console.log(data);
+        const filteredData = data.docs.map((doc) => ({
+          ...doc.data(),
+          id: doc.id,
+        }));
+        console.log(filteredData);
       } catch (error) {
-        console.log(error);
+        console.error(error);
       }
     };
-
-    fetchData();
+    getUserList();
   }, []);
 
   return <div>Dashboard</div>;

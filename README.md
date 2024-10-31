@@ -113,7 +113,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For more information, feel free to contact me at [briannegarilao@gmail.com](mailto:briannegarilao@gmail.com). 📧
 ```
-
-### Notes:
-- Ensure to replace `https://github.com/yourusername/medalert.git` with your actual GitHub repository link.
-- Update your email address where it says `your-email@example.com`.

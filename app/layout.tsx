@@ -12,8 +12,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="w-full h-full bg-slate-400">
-      <body>{children}</body>
+    <html lang="en" className="h-screen" data-theme="synthwave">
+      <body className="flex min-h-screen items-center justify-center">
+        {children}
+      </body>
     </html>
   );
 }
